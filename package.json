@@ -2,18 +2,19 @@
   "name": "express_testing",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "./nytServer/app.js",
   "scripts": {
-    "test": "mocha",
-    "start": "node servers.js",
-    "dev": "nodemon servers.js"
+    "test": "mocha ./nytServer",
+    "start": "node ./nytServer/server.js",
+    "dev": "nodemon ./nytServer/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "node": "^13.3.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
